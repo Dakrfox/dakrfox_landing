@@ -1,0 +1,54 @@
+:root{
+    --main-orange: #f19736;
+    --main-white: #f6f9fc;
+}
+
+.imma {
+    font-weight: bold;
+    color: var(--main-orange);  
+    font-style: normal;
+}
+.hero.fullscreen .hero-body .content {
+    max-width: 75em;
+    margin: 0 auto 1.5em; 
+    /*margin-left: 5.5em;*/
+    width: 80%; 
+}
+.family-btn{
+    margin-top: 1em;
+    width: 100%;
+}
+.family-btn .btn{
+    margin: 0 1em ;
+    border: solid 1px var(--main-orange);
+    color: var(--main-orange);
+}
+.family-btn .btn:hover{
+    color: var(--main-white);
+    background-color: var(--main-orange);
+    transform: scale(1.05);
+}
+.family-btn .btn.orange{
+    color: var(--main-white);
+    background-color: var(--main-orange);
+}
+.family-btn .btn.orange:hover{
+    transform: scale(1.05);
+}
+.skills-n-advantages .row{
+    width: 100%;
+}
+.row.m-10{
+    margin: 10rem;
+    
+}
+.seccion.bg-light{
+    padding: 10rem;
+}
+
+@media only screen and (min-width: 768px){
+    
+    .seccion.bg-light{
+        padding: 0;
+    }
+}
