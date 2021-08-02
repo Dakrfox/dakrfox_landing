@@ -55,7 +55,7 @@
 
 @media only screen and (max-width: 768px){
     .img-stretch.w-120.h-120{
-        margin: 8em auto 0;
+        margin: 5em auto 0;
         max-width: 180px;
         max-height: 180px;
     }
