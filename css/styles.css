@@ -45,10 +45,30 @@
 .seccion.bg-light{
     padding: 10rem;
 }
+.card{
+    max-width: 70%;
+    margin: auto;
+}
+.h3.bg-light{
+    margin-bottom: 2em;
+}
 
-@media only screen and (min-width: 768px){
+@media only screen and (max-width: 768px){
     
     .seccion.bg-light{
         padding: 0;
+        padding-top: 2em;
+        padding-bottom: 1.5em;
+    }
+    .col-4{
+        margin-top: 1rem;
+    }
+    .row{
+        margin:0 1em 0 1em;
+    }
+    .card{
+        max-width: 100%;
+        margin: auto;
+        
     }
 }
