@@ -55,10 +55,23 @@
 
 @media only screen and (max-width: 768px){
     .img-stretch.w-120.h-120{
-        margin-top: 10em;
+        margin: 8em auto 0;
+        max-width: 180px;
+        max-height: 180px;
+    }
+    .title{
+        text-align: center;
+        font-size: 16px;
     }
     .btn{
        
+        width: 100%;
+    }
+    .hero.fullscreen .hero-body{
+        max-height: 100%;
+    }
+    .hero.fullscreen .hero-body .content{
+        margin: 0 auto 0;
         width: 100%;
     }
     .btn.orange{
