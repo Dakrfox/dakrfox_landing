@@ -54,7 +54,16 @@
 }
 
 @media only screen and (max-width: 768px){
-    
+    .img-stretch.w-120.h-120{
+        margin-top: 10em;
+    }
+    .btn{
+       
+        width: 100%;
+    }
+    .btn.orange{
+        margin-top: 1em;
+    }
     .seccion.bg-light{
         padding: 0;
         padding-top: 2em;
