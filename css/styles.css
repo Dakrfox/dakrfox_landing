@@ -85,8 +85,11 @@
     .col-4{
         margin-top: 1rem;
     }
-    .row{
-        margin:0 1em 0 1em;
+    .row.w-100.h-100{
+        margin: 0 auto 0;
+    }
+    .h3.bg-light{
+        text-align: center;
     }
     .card{
         max-width: 100%;
