@@ -97,7 +97,9 @@
     .row.w-100.h-100{
         margin: 0 auto 0;
     }
-    .h3.bg-light{
+    .h3.bg-light,
+    .about-me .h3
+    {
         text-align: center;
     }
     .card{
@@ -120,5 +122,7 @@
     .about-me
     {
         padding: 1em;
+        padding-top: 2em;
+        padding-bottom: 1.5em;
     }
 }
