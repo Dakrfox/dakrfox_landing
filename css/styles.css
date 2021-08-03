@@ -52,7 +52,16 @@
 .h3.bg-light{
     margin-bottom: 2em;
 }
-
+.u-shadow.bg-light{
+    margin: 2em;
+}
+.about-me{
+    padding: 10em;
+}
+.frame{
+    max-width: 450px;
+    margin: 3.5em auto 1.5em;
+}
 @media only screen and (max-width: 768px){
     .img-stretch.w-120.h-120{
         margin: 5em auto 0;
@@ -95,5 +104,21 @@
         max-width: 100%;
         margin: auto;
         
+    }
+    .u-shadow.bg-light{
+        margin: 1em;
+    }
+    .title.white{
+        font-size: 18px;
+        text-align: left;
+
+    }
+    .subtitle.text-gray-300{
+        font-size: 14px;
+        text-align: left;
+    }
+    .about-me
+    {
+        padding: 1em;
     }
 }
