@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
+    <link rel="shortcut icon" href="./img/circle-cropped.png">
     <link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
@@ -27,20 +28,20 @@
         </div>
         <div class="header-nav" id="header-menu">
             <div class="nav-left">
-                <div class="nav-item text-center"> <a href="#"> <span class="icon"> <i class="fab fa-wrapper fa-twitter"
-                                aria-hidden="true"></i> </span> </a> </div>
-                <div class="nav-item text-center"> <a href="#"> <span class="icon"> <i
+                <div class="nav-item text-center"> <a href="https://twitter.com/dakrfox"> <span class="icon"> <i
+                                class="fab fa-wrapper fa-twitter" aria-hidden="true"></i> </span> </a> </div>
+                <div class="nav-item text-center"> <a href="https://linkedin.com/in/dakrfox"> <span class="icon"> <i
                                 class="fab fa-wrapper fa-linkedin" aria-hidden="true"></i> </span> </a> </div>
-                <div class="nav-item text-center"> <a href="#"> <span class="icon"> <i class="fab fa-wrapper fa-github"
-                                aria-hidden="true"></i> </span> </a> </div>
+                <div class="nav-item text-center"> <a href="https://github.com/relibarion"> <span class="icon"> <i
+                                class="fab fa-wrapper fa-github" aria-hidden="true"></i> </span> </a> </div>
             </div>
             <div class="nav-right">
-                <div class="nav-item has-sub toggle-hover" id="dropdown">
+                <div class="nav-item has-sub toggle-hover text-orange-400" id="dropdown">
                     <a class="nav-dropdown-link">Menu</a>
                     <ul class="dropdown-menu dropdown-animated" role="menu">
-                        <li role="menu-item"><a href="#">Acerca de mí</a></li>
-                        <li role="menu-item"><a href="#">Skills</a></li>
-                        <li role="menu-item"><a href="#">Contacto</a></li>
+                        <li role="menu-item"><a href="#about-me">About me</a></li>
+                        <li role="menu-item"><a href="#skills">Skills</a></li>
+                        <li role="menu-item"><a href="#contact-me">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,8 +63,8 @@
                                 <h2 class="title">Hi, my name is Nicolas <br> I'm <span class="animate"></span> </h2>
                                 <div class="family-btn u-center">
 
-                                    <button class="btn">My portfolio</button>
-                                    <button class="btn orange">Contact me</button>
+                                    <button onclick="location.href='https://github.com/relibarion'" class="btn">My portfolio</button>
+                                    <button onclick="location.href='https://t.me/dakrfox'" class="btn orange">Contact me</button>
                                 </div>
                             </div>
 
@@ -75,7 +76,7 @@
         </div>
     </section>
 
-    <section class="seccion bg-light">
+    <section class="seccion bg-light" id="skills">
 
 
         <h3 class="h3 bg-light">Skills and More</h3>
@@ -156,7 +157,7 @@
     </section>
 
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
 
 
         <h3 class="h3">About me</h3>
@@ -166,17 +167,24 @@
                 <div class="frame">
                     <div class="frame__header u-text-center">
                         <div>
-                            <figure class="avatar"><img src="https://orig04.deviantart.net/aded/f/2013/066/c/2/profile_picture_by_naivety_stock-d5x8lbn.jpg"></figure>
+                            <figure class="avatar"><img
+                                    src="https://orig04.deviantart.net/aded/f/2013/066/c/2/profile_picture_by_naivety_stock-d5x8lbn.jpg">
+                            </figure>
                         </div>
                         <div>
                             <div class="frame__title">Nicolás Martinez</div>
                             <div class="frame__subtitle">Freelance Developer</div>
                         </div>
                         <div class="row">
-                            <a class="col" href="#"><i class="fa fa-wrapper fa-facebook link-btn" aria-hidden="true"></i></a>
-                            <a class="col" href="#"><i class="fa fa-wrapper fa-twitter link-btn" aria-hidden="true"></i></a>
-                            <a class="col" href="#"><i class="fa fa-wrapper fa-instagram link-btn" aria-hidden="true"></i></a>
-                            <a class="col" href="#"><i class="fa fa-wrapper fa-medium link-btn" aria-hidden="true"></i></a>
+
+                            <a class="col" href="https://instagram.com/dakrfox"><i
+                                    class="fab fa-wrapper fa-instagram text-orange-400" aria-hidden="true"></i></a>
+                            <a class="col" href="https://twitter.com/dakrfox"><i
+                                    class="fab fa-wrapper fa-twitter text-orange-400" aria-hidden="true"></i></a>
+                            <a class="col" href="https://github.com/relibarion"><i
+                                    class="fab fa-wrapper fa-github text-orange-400" aria-hidden="true"></i></a>
+                            <a class="col" href="https://linkedin.com/in/dakrfox"><i
+                                    class="fab fa-wrapper fa-linkedin text-orange-400" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div class="content-no-padding">
@@ -185,7 +193,8 @@
                     <div class="frame__body">
                         <div class="content u-text-center">
                             <h5>Hello World!</h5>
-                            <p>I'm a curious person, my skills were learned mostly (99%) self-taught and focused on improve everytime. With you we could do everything we wanted.</p>
+                            <p>I'm a curious person, my skills were learned mostly (99%) self-taught and focused on
+                                improve everytime. With you we could do everything we wanted.</p>
                         </div>
                     </div>
                     <div class="content-no-padding">
@@ -197,7 +206,7 @@
                 </div>
             </div>
             <div class="col-6 uppercase u-center">
-               <img src="./img/undraw_online_test_gba7.svg" alt="">
+                <img src="./img/undraw_online_test_gba7.svg" alt="">
             </div>
         </div>
 
@@ -207,18 +216,22 @@
 
 
 
-    <div class="hero bg-orange-400">
+    <div class="hero bg-orange-400" id="contact-me">
         <div class="hero-body">
             <div class="content">
                 <h3 class="title white">Do you wanna know me better?.</h3>
                 <h5 class="subtitle text-gray-300">Here is my profesional <br> social media.</h5>
             </div>
             <div class="u-items-flex-end u-inline-flex">
-                <button class="u-shadow bg-light">LinkedIn</button>
-                <button class="u-shadow bg-light">GitHub</button>
+                <button class="u-shadow bg-light"
+                    onclick="location.href='https://linkedin.com/in/dakrfox'">LinkedIn</button>
+                <button class="u-shadow bg-light"
+                    onclick="location.href='https://github.com/relibarion'">GitHub</button>
             </div>
         </div>
     </div>
+
+
 
     <section>
 
@@ -234,13 +247,13 @@
             <div class="row">
                 <div class="col-4">
                     <ul class="no-bullets">
-                        <a href="!#">
+                        <a href="https://wa.me/message/RRBBM3ZJ7P4BJ1">
                             <li class="footer__list-item">Whatsapp</li>
                         </a>
-                        <a href="!#">
+                        <a href="https://t.me/dakrfox">
                             <li class="footer__list-item">Telegram</li>
                         </a>
-                        <a href="!#">
+                        <a href="https://instagram.com/dakrfox">
                             <li class="footer__list-item">Instagram</li>
                         </a>
                         <ul>
@@ -249,13 +262,13 @@
                 </div>
                 <div class="col-4">
                     <ul class="no-bullets">
-                        <a href="!#">
+                        <a href="#test-modal">
                             <li class="footer__list-item">Blog</li>
                         </a>
-                        <a href="!#">
+                        <a href="mailto:dakrfox@Dakrfox.com">
                             <li class="footer__list-item">Email</li>
                         </a>
-                        <a href="!#">
+                        <a href="#test-modal">
                             <li class="footer__list-item">Reviews</li>
                         </a>
                         <ul>
@@ -264,15 +277,13 @@
                 </div>
                 <div class="col-4">
                     <ul class="no-bullets">
-                        <a href="!#">
+                        <a href="#test-modal">
                             <li class="footer__list-item">FAQ</li>
                         </a>
-                        <a href="!#">
+                        <a href="#">
                             <li class="footer__list-item">Streams</li>
                         </a>
-                        <a href="!#">
-                            <li class="footer__list-item">Social media</li>
-                        </a>
+                        
                         <ul>
                         </ul>
                     </ul>
@@ -283,10 +294,41 @@
     </footer>
 
 
+
+    <div class="modal modal-animated--zoom-out" id="test-modal">
+        <div class="modal-content" role="document">
+            <div class="modal-header">
+                <a href="#anchor-to-background" class="u-pull-right" aria-label="Close">
+                    <span class="icon">
+                        <i class="fa-wrapper fa fa-times"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="modal-body">
+                <h4>Sorry! I'm working on this.</h4>
+                <p>I'm answering all the questions you may have, just tell me</p>
+            </div>
+            <div class="modal-footer">
+                <div class="form-section u-text-right">
+                    <h4>- Dakrfox</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--scripts-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./js/main.js"></script>
-
+    <script>
+        document.addEventListener('keyup', function (e) {
+            if (e.key === "Escape") {
+                const modals = document.querySelectorAll('.modal-overlay');
+                for (const modal of modals) {
+                    modal.click();
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
