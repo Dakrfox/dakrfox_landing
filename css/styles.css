@@ -49,6 +49,9 @@
     max-width: 70%;
     margin: auto;
 }
+.bg-gray-200 {
+    margin: 0 auto;
+}
 .h3.bg-light{
     margin-bottom: 2em;
 }
