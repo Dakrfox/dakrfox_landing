@@ -7,18 +7,31 @@
 }
 @font-face { 
     font-family: oswald; 
-    src: url('/fonts/Oswald-VariableFont_wght.ttf'); 
+    src: url('../fonts/Oswald-VariableFont_wght.ttf'); 
 }
 @font-face{
     font-family: merriweather-light;
-    src: url('/fonts/Merriweather-Light.ttf');
+    src: url('../fonts/Merriweather-Light.ttf');
 }
-h6, h5, h4, h3, h2, h1, p, b, a{
+h6, h5, h4, h3, h2, h1, b, a{
     font-family: monserrat;
     font-weight: 200;
+
 }
+p{
+    font-family: merriweather-light;
+    font-weight: 200;
+}
+
 a{
     cursor: pointer;
+}
+p{
+    font-size: 1vw;
+    word-wrap: break-word;
+}
+i, .rating, p, h6, h5, h4, h3, h2, h1{
+    cursor: default;
 }
 span, button{
     font-family: merriweather-light;
@@ -71,6 +84,7 @@ body {
     font-family: monserrat;
     font-weight: 200;
     letter-spacing: 5px;
+    cursor: pointer !important;
 }
 
 .dropdown-menu.dropdown-animated {
@@ -287,7 +301,7 @@ body {
 }
 ._grid-ex{
     background-color: var(--main-white);
-    height: 200px;
+    height: 250px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
     display: grid;
     grid:   'header'
