@@ -366,14 +366,46 @@ summary{
 .glow::before, .glow::after{
     content: '';
     position: absolute;
-    left: -5px;
-    top: -5px;
+    left: -2px;
+    top: -2px;
     background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
     background-size: 400%;
-    width: calc(100% + 10px);
-    height: 210px;
+    width: calc(100% + 5px);
+    height: 205px;
     z-index: -100;
     animation: animate 20s linear infinite;
+}
+.glow::after{
+    filter: blur(10px);
+}
+.toast{
+    margin: 0 !important;
+    background-color: var(--main-orange) !important;
+    border: 1px solid var(--main-orange) !important;
+    height: 150px;
+}
+.toast.toast--primary i{
+    width: 80px;
+    height: 80px;
+}
+.toast.toast--primary i::before{
+    width: 80px;
+    height: 80px;
+}
+.social-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    fill: var(--main-white);
+    
+}
+.social-cont svg{
+    cursor: pointer;
+}
+.social-cont svg:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.125);
 }
 @keyframes animate{
     0%{
@@ -387,6 +419,7 @@ summary{
         background-position: 0 0;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .img-stretch.w-120.h-120 {
         margin: 5em auto 0;
