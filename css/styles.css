@@ -17,15 +17,19 @@
     font-family: monserrat;
     src: url('../fonts/Montserrat-VariableFont_wght.ttf');
 }
+
 *{
     font-family: monserrat;
     font-weight: 500;
+    box-sizing: border-box;
 }
 p, h2{
     font-family: merriweather-light;
     font-weight: 200;
 }
-
+li{
+    list-style: none;
+}
 a{
     cursor: pointer;
 }
@@ -49,12 +53,15 @@ span, button{
 }
 html {
     background-color: f6f9fc;
+    scroll-behavior: smooth;
 }
 
 body {
     padding-top: 2%;
 }
-
+b{
+    font-weight: 800;
+}
 
 .imma {
     font-weight: bold;
@@ -407,6 +414,30 @@ summary{
     transition: 0.3s ease-in-out;
     transform: scale(1.125);
 }
+.footer{
+    padding: 6rem;
+}
+.footer p, .footer a{
+    font-size: 0.85vw;
+    color: var(--main-black);
+    font-weight: 200;
+}
+.footer-cols{
+    margin: 0 50px auto;
+}
+.subtitle
+{
+    margin-top: 5rem;
+}
+
+.JS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
 @keyframes animate{
     0%{
         background-position: 0 0;
