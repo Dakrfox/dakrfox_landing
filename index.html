@@ -7,6 +7,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
     <link rel="shortcut icon" href="./img/logo.svg">
+    <script src="https://kit.fontawesome.com/de83c9e292.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
@@ -17,12 +18,12 @@
 </head>
 
 <body>
-    <div class="header" onclick="javascript:location.reload()">
-        <div class="header-brand">
-            <div class="header-brand_logo">
+    <div class="header" >
+        <div class="header-brand" >
+            <div class="header-brand_logo" onclick="javascript:location.reload()">
                 <img src="./img/logo.svg" alt="">
             </div>
-            <div class="header-brand_content">
+            <div class="header-brand_content" onclick="javascript:location.reload()">
                 <h1> NICOLAS MARTINEZ </h1>
             </div>
         </div>
@@ -31,31 +32,31 @@
 
                 <ul class="dropdown-menu dropdown-animated" role="menu">
                     <li class="list">
-                        <a href="#about-me1">
+                        <a onclick="javascript:location.reload()">
                             <i class="fas fa-home"></i>
                             <span class="text">Home</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href="#about-me5">
+                        <a href="#skills">
                             <i class="fas fa-bolt"></i>
                             <span class="text">Skills</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href="#about-me3">
+                        <a href="#knowledge">
                             <i class="fas fa-project-diagram"></i>
                             <span class="text">Knowledge</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href="#about-me4">
+                        <a href="#hireme">
                             <i class="fas fa-laptop-code"></i>
                             <span class="text">Hire me</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href="#about-me2">
+                        <a href="#meetup">
                             <i class="fas fa-coffee"></i>
                             <span class="text">Meet up</span>
                         </a>
@@ -82,7 +83,7 @@
                                 <h2 class="title">Hi, my name is Nicolas <br> I'm <span class="animate"></span> </h2>
                                 <div class="family-btn u-center">
 
-                                    <button onclick="location.href='https://github.com/relibarion'" class="btn">My
+                                    <button onclick="location.href='./projects/projects.html'" class="btn">My
                                         portfolio</button>
                                     <button onclick="location.href='https://t.me/dakrfox'" class="btn orange">Contact
                                         me</button>
@@ -114,7 +115,7 @@
                     </div>
                 </div>
                 <div class="footer-card">
-                    <div class="rating">
+                    <div class="rating tooltip tooltip--right" data-tooltip="≈ 1.000 hours of practice">
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
@@ -156,7 +157,7 @@
                     </div>
                 </div>
                 <div class="footer-card">
-                    <div class="rating">
+                    <div class="rating tooltip tooltip--right" data-tooltip="≈ 1.000 hours of practice" >
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
@@ -198,7 +199,7 @@
                     </div>
                 </div>
                 <div class="footer-card">
-                    <div class="rating">
+                    <div class="rating tooltip tooltip--right" data-tooltip="≈ 1.000 hours of practice">
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
@@ -241,7 +242,7 @@
                     </div>
                 </div>
                 <div class="footer-card">
-                    <div class="rating">
+                    <div class="rating tooltip tooltip--right" data-tooltip="≈ 1.000 hours of practice">
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
@@ -282,7 +283,7 @@
                     </div>
                 </div>
                 <div class="footer-card">
-                    <div class="rating">
+                    <div class="rating tooltip tooltip--right" data-tooltip="≈ 1.000 hours of practice">
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
@@ -666,7 +667,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="meetup">
         <div class="toast toast--primary">
             <div class="grid u-gap-2 grid-cols-4 u-text-center" style="height: 100%;">
                 <div class="social-cont">
@@ -715,55 +716,48 @@
     </section>
     <!--FOOTER-->
     <footer class="footer bg-light text-dark">
-        <h6 class="footer__title black uppercase">Dakrfox</h6>
-        <div class="content">
-            <div class="divider"></div>
-            <div class="row">
-                <div class="col-4">
-                    <ul class="no-bullets">
-                        <a href="https://wa.me/message/RRBBM3ZJ7P4BJ1">
-                            <li class="footer__list-item">Whatsapp</li>
-                        </a>
-                        <a href="https://t.me/dakrfox">
-                            <li class="footer__list-item">Telegram</li>
-                        </a>
-                        <a href="https://instagram.com/dakrfox">
-                            <li class="footer__list-item">Instagram</li>
-                        </a>
-                        <ul>
-                        </ul>
-                    </ul>
-                </div>
-                <div class="col-4">
-                    <ul class="no-bullets">
-                        <a href="#test-modal">
-                            <li class="footer__list-item">Blog</li>
-                        </a>
-                        <a href="mailto:dakrfox@Dakrfox.com">
-                            <li class="footer__list-item">Email</li>
-                        </a>
-                        <a href="#test-modal">
-                            <li class="footer__list-item">Reviews</li>
-                        </a>
-                        <ul>
-                        </ul>
-                    </ul>
-                </div>
-                <div class="col-4">
-                    <ul class="no-bullets">
-                        <a href="#test-modal">
-                            <li class="footer__list-item">FAQ</li>
-                        </a>
-                        <a href="#">
-                            <li class="footer__list-item">Streams</li>
-                        </a>
-                        <ul>
-                        </ul>
-                    </ul>
-                </div>
+        <h6 class="footer__title black uppercase">Nicolas I. Martinez Herrera</h6>
+        <p>Apps developer | Web Developer | Ethical Hacker | Freelancer | Systems Engineer</p>
+        <br>
+        <div class="grid grid-cols-4 u-gap-2 u-text-left">
+            <div class="footer-cols">
+                <b>Nicolas Martinez</b>
+                <br>
+                <p>
+                    I'm not an employee, I'm an investment who will return your money making real your dreams or improve your operations.
+                </p>
+            </div>
+            <div class="footer-cols">
+                <b>Features</b>
+                <br>
+                <ul>
+                    <li> <a href=""> FAQ </a></li>
+                    <li><a href=""> BLOG</a></li>
+                    <li><a href=""> GitHub</a></li>
+                    <li><a href=""> Surveys</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-cols">
+                <b>Open Sources by NIMH</b>
+                <br>
+                <ul>
+                    <li> <a href="">APIs</a> </li>
+                    <li> <a href="">Assets</a> </li>
+                    <li> <a href="">Notes</a> </li>
+                </ul>
+            </div>
+            <div class="footer-cols">
+                <b>Any suggestions</b>
+                <br>
+                <ul>
+                    <li> <p>business.nimh@outlook.com </p> </li>
+                    <li><p> +57 319 745 8167</p> </li>
+                </ul>
+
             </div>
         </div>
-        <p class="subtitle">© 2022 Dakrfox</p>
+        <p class="subtitle">© 2022 | Nicolas I. Martinez Herrera</p>
     </footer>
 
 
