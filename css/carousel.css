@@ -1,6 +1,7 @@
 section{
-    margin: 0 6rem 0;
+    margin: 1rem 6rem 0;
     max-height: 170px;
+    
 }
 
 .swiper {
@@ -39,4 +40,8 @@ section{
 }
 .skills-name{
     margin: 6rem 6rem 3rem 6rem ;
+}
+p{
+    min-width: 150px;
+    margin-left: 3rem;
 }
