@@ -1,104 +1,67 @@
 <!DOCTYPE html>
 <html id="page">
-<!--aaaaaaaaaaaaaaa-->
-
 <head>
     <title>Nicolas Martinez</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge;" />
     <link rel="shortcut icon" href="./img/logo.svg">
+    <script src="https://kit.fontawesome.com/de83c9e292.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
-
 </head>
-
 <body>
-    <!--div class="header header-fixed unselectable header-animated">
-        <div class="header-brand">
-            <div class="nav-item no-hover">
-                <h6 class="title">Dakrfox</h6>
-            </div>
-            <div class="nav-item nav-btn" id="header-btn"> <span></span> <span></span> <span></span> </div>
-        </div>
-        <div class="header-nav" id="header-menu">
-            <div class="nav-left">
-                <div class="nav-item text-center"> <a href="https://twitter.com/dakrfox"> <span class="icon"> <i
-                                class="fab fa-wrapper fa-twitter" aria-hidden="true"></i> </span> </a> </div>
-                <div class="nav-item text-center"> <a href="https://linkedin.com/in/dakrfox"> <span class="icon"> <i
-                                class="fab fa-wrapper fa-linkedin" aria-hidden="true"></i> </span> </a> </div>
-                <div class="nav-item text-center"> <a href="https://github.com/relibarion"> <span class="icon"> <i
-                                class="fab fa-wrapper fa-github" aria-hidden="true"></i> </span> </a> </div>
-            </div>
-            <div class="nav-right">
-                <div class="nav-item has-sub toggle-hover text-orange-400" id="dropdown">
-                    <a class="nav-dropdown-link">Menu</a>
-                    <ul class="dropdown-menu dropdown-animated" role="menu">
-                        <li role="menu-item"><a href="#about-me">About me</a></li>
-                        <li role="menu-item"><a href="#skills">Skills</a></li>
-                        <li role="menu-item"><a href="#contact-me">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div-->
     <div class="header">
         <div class="header-brand">
-            <div class="header-brand_logo">
-                <img src="/img/logo.svg" alt="">
+            <div class="header-brand_logo" onclick="javascript:location.reload()">
+                <img src="./img/logo.svg" alt="">
             </div>
-            <div class="header-brand_content">
-                <h6>NICOLAS MARTINEZ</h6>
+            <div class="header-brand_content" onclick="javascript:location.reload()">
+                <h1> NICOLAS MARTINEZ </h1>
             </div>
         </div>
-        <div class="header-menu">
+        <div class="header-menu" style="display:none ;">
             <div class="nav-right">
-
-                <ul class="dropdown-menu dropdown-animated" role="menu">
+                <ul class="dropdown-menu dropdown-animated" style="display:none ;" role="menu">
                     <li class="list">
-                        <a href="#about-me1">
+                        <a onclick="javascript:location.reload()">
                             <i class="fas fa-home"></i>
                             <span class="text">Home</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href="#about-me2">
-                            <i class="fas fa-coffee"></i>
-                            <span class="text">Meet up</span>
+                        <a href="#skills">
+                            <i class="fas fa-bolt"></i>
+                            <span class="text">Skills</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href="#about-me3">
+                        <a href="#knowledge">
                             <i class="fas fa-project-diagram"></i>
-                            <span class="text">Recent projects</span>
+                            <span class="text">Knowledge</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href="#about-me4">
+                        <a href="#hireme">
                             <i class="fas fa-laptop-code"></i>
                             <span class="text">Hire me</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href="#about-me5">
-                            <i class="fas fa-bolt"></i>
-                            <span class="text">Skills</span>
+                        <a href="#meetup">
+                            <i class="fas fa-coffee"></i>
+                            <span class="text">Meet up</span>
                         </a>
                     </li>
-
                 </ul>
             </div>
         </div>
-
     </div>
-
-    <section class="section">
+    <section class="section" id="hero-body">
         <div class="hero fullscreen">
             <div class="hero-body">
                 <div class="content">
@@ -112,14 +75,12 @@
                             <div class="uppercase p-3 u-center">
                                 <h2 class="title">Hi, my name is Nicolas <br> I'm <span class="animate"></span> </h2>
                                 <div class="family-btn u-center">
-
-                                    <button onclick="location.href='https://github.com/relibarion'" class="btn">My
+                                    <button onclick="location.href='#test-modal'" class="btn">My
                                         portfolio</button>
                                     <button onclick="location.href='https://t.me/dakrfox'" class="btn orange">Contact
                                         me</button>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -127,11 +88,9 @@
         </div>
         </div>
     </section>
-
     <section class="seccion bg-light" id="skills">
-
         <h3 class="h3 bg-light">SKILLS</h3>
-        <div class="grid u-gap-2 grid-cols-4" width="100">
+        <div class="grid u-gap-2 grid-cols-4" id="hireme-grid" width="100">
             <div class="_grid-ex">
                 <div class="header-card">
                     <h4>Javascript</h4>
@@ -139,27 +98,39 @@
                 <div class="content-card">
                     <div class="text">
                         <p>
-                        Javascript, Ecmascript and Typescript such as one item mades more interesting what would we do</p>
+                            JS | ES | TS. It's the most used language in the whole world,
+                            usability is such as good as the developer's skills
+                        </p>
                     </div>
                 </div>
                 <div class="footer-card">
-                    <div class="rating"></div>
+                    <div class="rating tooltip tooltip--right" data-tooltip="≈ 1.000 hours of practice">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
                 </div>
-                
             </div>
             <div class="_grid-ex">
-                <div class="header-card"></div>
+                <div class="header-card">
+                    <div class="image-main">
+                        <img src="./img/Ellipse 2.svg" width="30" height="30" alt="">
+                    </div>
+                </div>
                 <div class="content-card">
                     <div class="text">
                         <p>
-                        projects are separated by categories, FrontEnd BackEnd Scripts for an expecific purpose</p>
+                            Projects are focused more on programming than on software development. That's why
+                            they're more academic
+                        </p>
                     </div>
                 </div>
                 <div class="footer-card">
-                    <a style="max-height: 19px;">see projects</a>
+                    <a href="#test-modal" style="max-height: 19px;">see projects</a>
                 </div>
             </div>
-
             <div class="_grid-ex">
                 <div class="header-card">
                     <h4>Python</h4>
@@ -167,27 +138,39 @@
                 <div class="content-card">
                     <div class="text">
                         <p>
-                        Javascript, Ecmascript and Typescript such as one item mades more interesting what would we do</p>
+                            A powerfull language that makes capable us to create some interesting things or
+                            exploting them
+                        </p>
                     </div>
                 </div>
                 <div class="footer-card">
-                    <div class="rating"></div>
+                    <div class="rating tooltip tooltip--right" data-tooltip="≈ 1.000 hours of practice">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
                 </div>
-                
             </div>
             <div class="_grid-ex">
-                <div class="header-card"></div>
+                <div class="header-card">
+                    <div class="image-main">
+                        <img src="./img/Group 2.svg" width="30" height="30" alt="">
+                    </div>
+                </div>
                 <div class="content-card">
                     <div class="text">
                         <p>
-                        projects are separated by categories, FrontEnd BackEnd Scripts for an expecific purpose</p>
+                            Here are a variety of projects that show you what you can do with me using
+                            this language
+                        </p>
                     </div>
                 </div>
                 <div class="footer-card">
-                    <a style="max-height: 19px;">see projects</a>
+                    <a href="#test-modal" style="max-height: 19px;">see projects</a>
                 </div>
             </div>
-
             <div class="_grid-ex">
                 <div class="header-card">
                     <h4>Hacking</h4>
@@ -195,27 +178,38 @@
                 <div class="content-card">
                     <div class="text">
                         <p>
-                        Javascript, Ecmascript and Typescript such as one item mades more interesting what would we do</p>
+                            Don't be afraid. My knowledge could makes you more confident about your security
+                        </p>
                     </div>
                 </div>
                 <div class="footer-card">
-                    <div class="rating"></div>
+                    <div class="rating tooltip tooltip--right" data-tooltip="≈ 1.000 hours of practice">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
                 </div>
-                
             </div>
             <div class="_grid-ex">
-                <div class="header-card"></div>
+                <div class="header-card">
+                    <div class="image-main">
+                        <img src="./img/Ellipse 6.svg" width="30" height="30" alt="">
+                    </div>
+                </div>
                 <div class="content-card">
                     <div class="text">
                         <p>
-                        projects are separated by categories, FrontEnd BackEnd Scripts for an expecific purpose</p>
+                            Projects in this section are more difficult to keep in a place than others,
+                            but here I made something for you
+                        </p>
                     </div>
                 </div>
                 <div class="footer-card">
-                    <a style="max-height: 19px;">see projects</a>
+                    <a href="#test-modal" style="max-height: 19px;">see projects</a>
                 </div>
             </div>
-
             <div class="_grid-ex">
                 <div class="header-card">
                     <h4>Development</h4>
@@ -223,27 +217,38 @@
                 <div class="content-card">
                     <div class="text">
                         <p>
-                        Javascript, Ecmascript and Typescript such as one item mades more interesting what would we do</p>
+                            Programing in order to develop something usefull with a comercial value
+                        </p>
                     </div>
                 </div>
                 <div class="footer-card">
-                    <div class="rating"></div>
+                    <div class="rating tooltip tooltip--right" data-tooltip="≈ 1.000 hours of practice">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
                 </div>
-                
             </div>
             <div class="_grid-ex">
-                <div class="header-card"></div>
+                <div class="header-card">
+                    <div class="image-main">
+                        <img src="./img/Ellipse 7.svg" width="30" height="30" alt="">
+                    </div>
+                </div>
                 <div class="content-card">
                     <div class="text">
                         <p>
-                        projects are separated by categories, FrontEnd BackEnd Scripts for an expecific purpose</p>
+                            FrontEnd? BackEnd? Angular? Node.js? .NET? Yes! all of them. I'm fullstack
+                            developer with a curious mind
+                        </p>
                     </div>
                 </div>
                 <div class="footer-card">
-                    <a style="max-height: 19px;">see projects</a>
+                    <a href="#test-modal" style="max-height: 19px;">see projects</a>
                 </div>
             </div>
-
             <div class="_grid-ex">
                 <div class="header-card">
                     <h4>Bussiness</h4>
@@ -251,153 +256,432 @@
                 <div class="content-card">
                     <div class="text">
                         <p>
-                        Javascript, Ecmascript and Typescript such as one item mades more interesting what would we do</p>
+                            How can I quantifier my bussiness? How I do my bussiness? How can I do?
+                        </p>
                     </div>
                 </div>
                 <div class="footer-card">
-                    <div class="rating"></div>
+                    <div class="rating tooltip tooltip--right" data-tooltip="≈ 1.000 hours of practice">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
                 </div>
-                
             </div>
             <div class="_grid-ex">
-                <div class="header-card"></div>
+                <div class="header-card">
+                    <div class="image-main">
+                        <img src="./img/Ellipse 8.svg" width="30" height="30" alt="">
+                    </div>
+                </div>
                 <div class="content-card">
                     <div class="text">
                         <p>
-                        projects are separated by categories, FrontEnd BackEnd Scripts for an expecific purpose</p>
+                            Here are my bussiness projects, but remenber the best bussiness begins with my contact</p>
                     </div>
                 </div>
                 <div class="footer-card">
-                    <a style="max-height: 19px;">see projects</a>
+                    <a href="#test-modal" style="max-height: 19px;">see projects</a>
                 </div>
-            </div>
-
-            
-        </div>
-
-
-
-    </section>
-    <section class="about-me" id="about-me">
-        <h3 class="h3">ABOUT ME</h3>
-        <div class="row">
-            <div class="col-6 uppercase">
-                <div class="frame">
-                    <div class="frame__header u-text-center">
-                        <div>
-                            <figure class="avatar"><img
-                                    src="https://orig04.deviantart.net/aded/f/2013/066/c/2/profile_picture_by_naivety_stock-d5x8lbn.jpg">
-                            </figure>
-                        </div>
-                        <div>
-                            <div class="frame__title">Nicolás Martinez</div>
-                            <div class="frame__subtitle">Freelance Developer</div>
-                        </div>
-                        <div class="row">
-                            <a class="col" href="https://instagram.com/dakrfox"><i
-                                    class="fab fa-wrapper fa-instagram text-orange-400" aria-hidden="true"></i></a>
-                            <a class="col" href="https://twitter.com/dakrfox"><i
-                                    class="fab fa-wrapper fa-twitter text-orange-400" aria-hidden="true"></i></a>
-                            <a class="col" href="https://github.com/relibarion"><i
-                                    class="fab fa-wrapper fa-github text-orange-400" aria-hidden="true"></i></a>
-                            <a class="col" href="https://linkedin.com/in/dakrfox"><i
-                                    class="fab fa-wrapper fa-linkedin text-orange-400" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <div class="content-no-padding">
-                        <div class="divider m-0"></div>
-                    </div>
-                    <div class="frame__body">
-                        <div class="content u-text-center">
-                            <h5>Hello World!</h5>
-                            <p>I'm a curious person, my skills were learned mostly (99%) self-taught and focused on
-                                improve everytime. With you we could do everything we wanted.</p>
-                        </div>
-                    </div>
-                    <div class="content-no-padding">
-                        <div class="divider m-0"></div>
-                    </div>
-                    <div class="frame__footer">
-                        <div class="frame__subtitle u-text-center"><i>"The devil is in details."</i></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 uppercase u-center">
-                <img src="./img/undraw_online_test_gba7.svg" alt="">
             </div>
         </div>
     </section>
-    <div class="hero bg-orange-400" id="contact-me">
-        <div class="hero-body">
-            <div class="content">
-                <h3 class="title white">Do you wanna know me better?.</h3>
-                <h5 class="subtitle text-gray-300">Here is my profesional <br> social media.</h5>
-            </div>
-            <div class="u-items-flex-end u-inline-flex">
-                <button class="u-shadow bg-light"
-                    onclick="location.href='https://linkedin.com/in/dakrfox'">LinkedIn</button>
-                <button class="u-shadow bg-light"
-                    onclick="location.href='https://github.com/relibarion'">GitHub</button>
+    <section class="knowledge" id="knowledge">
+        <h3 class="h3">KNOWLEDGE</h3>
+        <P class="description"> in this section I will show you the knowledge I have acquired in
+            these areas in which I work </P>
+        <div class="accordion-container">
+            <details class="accordion">
+                <summary class="accordion__summary">JavaScript | EcmaScript | TypeScript </summary>
+                <p>I've learnt this language and all the JS family because is the most used language
+                    in the world and its very useful to satisfy many
+                    needs that we may have in web development as well as native apps, scripting and
+                    sooner than we expected, data science.</p>
+                <div class="grid u-gap-2 grid-cols-3 u-text-center" id="kn-grid">
+                    <div class="badges">
+                        <div class="badges-title">
+                            <h5>Badges</h5>
+                        </div>
+                        <div class="content">
+                            <div class="grid u-gap-2 grid-cols-1 u-text-center">
+                                <div class="grid-r-2">
+                                    <div class="_grid-ex" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificates">
+                        <div class="certificates-title">
+                            <h5>Certificates</h5>
+                        </div>
+                        <div class="content">
+                            <div class="grid u-gap-2 grid-cols-1 u-text-center">
+                                <div class="_grid-ex" style="max-height: 80px; display:none;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses">
+                        <div class="courses-title">
+                            <h5>Courses</h5>
+                        </div>
+                        <div class="content">
+                            <div class="grid u-gap-2 grid-cols-2 u-text-center">
+                                <div class="_grid-ex" style="max-height: 80px;">
+                                    <p class="k-text">
+                                        Basic JavaScript Course by Platzi
+                                    </p>
+                                </div>
+                                <div class="_grid-ex" style="max-height: 80px;">
+                                    <p class="k-text">
+                                        FrontEnd Developer by Platzi
+                                    </p>
+                                </div>
+                                <div class="_grid-ex" style="max-height: 80px;">
+                                    <p class="k-text">
+                                        Node.js Fundamentals by Platzi
+                                    </p>
+                                </div>
+                                <div class="_grid-ex" style="max-height: 80px;">
+                                    <p class="k-text">
+                                        Practice JavaScript Course by Platzi
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+            <details class="accordion">
+                <summary class="accordion__summary">Python</summary>
+                <p>I've learnt this language first beacuse is really need it to introduce in a
+                    cybersecurity enviroment then I started to know
+                    how powerful this language is in web development, mobile development,
+                    networks, data science, programing in general
+                    Python has won its place in my heart.</p>
+                <div class="grid u-gap-2 grid-cols-3 u-text-center" id="kn-grid">
+                    <div class="badges">
+                        <div class="badges-title">
+                            <h5>Badges</h5>
+                        </div>
+                        <div class="content">
+                            <div class="grid u-gap-2 grid-cols-1 u-text-center">
+                                <div class="grid-r-2">
+                                    <div class="_grid-ex" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificates">
+                        <div class="certificates-title">
+                            <h5>Certificates</h5>
+                        </div>
+                        <div class="content">
+                            <div class="grid u-gap-2 grid-cols-1 u-text-center">
+                                <div class="_grid-ex" style="max-height: 80px; display:none;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses">
+                        <div class="courses-title">
+                            <h5>Courses</h5>
+                        </div>
+                        <div class="content">
+                            <div class="grid u-gap-2 grid-cols-2 u-text-center">
+                                <div class="_grid-ex" style="max-height: 80px;">
+                                    <p class="k-text">
+                                        Python Master Course by A.C. (Udemy)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+            <details class="accordion">
+                <summary class="accordion__summary">Ethical Hacking</summary>
+                <p>This area of knowledge is my favorite, I'm impressed how creative you
+                    need to be to shine in the profession. It has my favorite skills both
+                    personally and professionally.
+                <ul>
+                    <li>Programming</li>
+                    <li>Networking</li>
+                    <li>Psychology</li>
+                    <li>Data Science</li>
+                </ul>
+                among others.</p>
+                <div class="grid u-gap-2 grid-cols-3 u-text-center">
+                    <div class="badges">
+                        <div class="badges-title">
+                            <h5>Badges</h5>
+                        </div>
+                        <div class="content">
+                            <div class="grid u-gap-2 grid-cols-1 u-text-center">
+                                <div class="grid-r-2">
+                                    <div class="_grid-ex" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificates">
+                        <div class="certificates-title">
+                            <h5>Certificates</h5>
+                        </div>
+                        <div class="content">
+                            <div class="grid u-gap-2 grid-cols-1 u-text-center">
+                                <div class="_grid-ex" style="max-height: 80px; ">
+                                    <p class="k-text">building a cybersecurity career path by OEA/OAS (The Organization of American
+                                        States)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses">
+                        <div class="courses-title">
+                            <h5>Courses</h5>
+                        </div>
+                        <div class="content">
+                            <div class="grid u-gap-2 grid-cols-2 u-text-center">
+                                <div class="_grid-ex" style="max-height: 80px;">
+                                    <p class="k-text">
+                                        0auth Authentication by Platzi
+                                    </p>
+                                </div>
+                                <div class="_grid-ex" style="max-height: 80px;">
+                                    <p class="k-text">
+                                        Ethical Hacking by Platzi
+                                    </p>
+                                </div>
+                                <div class="_grid-ex" style="max-height: 80px;">
+                                    <p class="k-text">
+                                        Internet Networks by Platzi
+                                    </p>
+                                </div>
+                                <div class="_grid-ex" style="max-height: 80px;">
+                                    <p class="k-text">
+                                        CyberSecurity Course by Platzi
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+            <details class="accordion">
+                <summary class="accordion__summary">Apps Development</summary>
+                <p>This branch specifically focuses on development knowledge, application
+                    lifecycle times, the steps needed to carry out a project and the
+                    tools to work with over and above the programming languages.
+                    and the frameworks over the programming languages.</p>
+                <div class="grid u-gap-2 grid-cols-3 u-text-center">
+                    <div class="badges">
+                        <div class="badges-title">
+                            <h5>Badges</h5>
+                        </div>
+                        <div class="content">
+                            <div class="grid u-gap-2 grid-cols-1 u-text-center">
+                                <div class="grid-r-2">
+                                    <div class="_grid-ex" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificates">
+                        <div class="certificates-title">
+                            <h5>Certificates</h5>
+                        </div>
+                        <div class="content">
+                            <div class="grid u-gap-2 grid-cols-1 u-text-center">
+                                <div class="_grid-ex" style="max-height: 80px; display:none;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses">
+                        <div class="courses-title">
+                            <h5>Courses</h5>
+                        </div>
+                        <div class="content">
+                            <div class="grid u-gap-2 grid-cols-2 u-text-center">
+                                <div class="_grid-ex" style="max-height: 80px;">
+                                    <p class="k-text">
+                                        Mobile Apps Development by Google
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+            <details class="accordion">
+                <summary class="accordion__summary">Business</summary>
+                <p>this type of knowledge has been much more empirical than theoretical,
+                    however my basis in this knowledge is extensive and highly qualified...
+                    "everything is a business".</p>
+                <div class="grid u-gap-2 grid-cols-3 u-text-center">
+                    <div class="badges">
+                        <div class="badges-title">
+                            <h5>Badges</h5>
+                        </div>
+                        <div class="content">
+                            <div class="grid u-gap-2 grid-cols-1 u-text-center">
+                                <div class="grid-r-2">
+                                    <div class="_grid-ex" style="display:none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificates">
+                        <div class="certificates-title">
+                            <h5>Certificates</h5>
+                        </div>
+                        <div class="content">
+                            <div class="grid u-gap-2 grid-cols-1 u-text-center">
+                                <div class="_grid-ex" style="max-height: 80px; display:none;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses">
+                        <div class="courses-title">
+                            <h5>Courses</h5>
+                        </div>
+                        <div class="content">
+                            <div class="grid u-gap-2 grid-cols-2 u-text-center">
+                                <div class="_grid-ex" style="max-height: 80px;">
+                                    <p class="k-text">
+                                        Business Model Canvas by Platzi
+                                    </p>
+                                </div>
+                                <div class="_grid-ex" style="max-height: 80px;">
+                                    <p class="k-text">
+                                        Work as a Freelancer by Platzi
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+    </section>
+    <section class="hireme" id="hireme">
+        <h3>HIRE ME</h3>
+        <p>Here you have my value propositions, I am still learning and I want to support/develop each project with the
+            best quality that I can afford.
+            With me you will have a clear and precise attention, not only by the fact of using all these companies as
+            intermediaries of our contracting,
+            which assure us that we will bring the best way to do this business, but also you will have a constant and
+            updated follow up with a guarantee
+            of service even if you decide an external contracting to these applications you will also have the follow up
+            using my own catalog of applications.
+        </p>
+        <div class="grid grid-cols-5 u-gap-2 u-text-center" style="margin-top: 5%;">
+            <div class="tard glow" onclick="location.href='https://www.freelancer.com/u/Libarion'"> <img src="./img/FR.png" alt="Freelancer.com"> </div>
+            <div class="tard glow" onclick="location.href='https://www.fiverr.com/dkfnicolas'"> <img src="./img/FV.png" alt="Fiverr"> </div>
+            <div class="tard glow" onclick="location.href='https://www.upwork.com/freelancers/~013499187a41e98caf'"> <img src="./img/z6aeO6kAGsAG.png" alt="Upwork"> </div>
+            <div class="tard glow" onclick="location.href='https://www.workana.com/freelancer/9d423f6a4a110cafe83408a66eba5a94'"> <img src="./img/W.png" alt="Workana"> </div>
+            <div class="tard glow" onclick="location.href='https://frzn.site'"> <img src="./img/logo.svg" style="width: 70%; height: 70%;" alt="NIMH"> </div>
+        </div>
+    </section>
+    <section id="meetup">
+        <div class="toast toast--primary">
+            <div class="grid u-gap-2 grid-cols-4 u-text-center" style="height: 100%;" id="SM">
+                <div class="social-cont" onclick="location.href='https://wa.me/573194758167'">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="70" >
+                        <path
+                            d="M224 122.8c-72.7 0-131.8 59.1-131.9 131.8 0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6 49.9-13.1 4.8 2.9c20.2 12 
+                    43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8 0-35.2-15.2-68.3-40.1-93.2-25-25-58-38.7-93.2-38.7zm77.5 188.4c-3.3 
+                    9.3-19.1 17.7-26.7 18.8-12.6 1.9-22.4.9-47.5-9.9-39.7-17.2-65.7-57.2-67.7-59.8-2-2.6-16.2-21.5-16.2-41s10.2-29.1 
+                    13.9-33.1c3.6-4 7.9-5 10.6-5 2.6 0 5.3 0 7.6.1 2.4.1 5.7-.9 8.9 6.8 3.3 7.9 11.2 27.4 12.2 29.4s1.7 4.3.3 6.9c-7.6 15.2-15.7 
+                    14.6-11.6 21.6 15.3 26.3 30.6 35.4 53.9 47.1 4 2 6.3 1.7 8.6-1 2.3-2.6 9.9-11.6 12.5-15.5 2.6-4 5.3-3.3 8.9-2 3.6 1.3 23.1 10.9 
+                    27.1 12.9s6.6 3 7.6 4.6c.9 1.9.9 9.9-2.4 19.1zM400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 
+                    48-21.5 48-48V80c0-26.5-21.5-48-48-48zM223.9 413.2c-26.6 0-52.7-6.7-75.8-19.3L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 
+                    167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5 29.9 30 47.9 69.8 47.9 112.2 0 87.4-72.7 158.5-160.1 158.5z" />
+                    </svg>
+                </div>
+                <div class="social-cont" onclick="location.href='https://www.linkedin.com/in/fn22/'">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="70" >
+                        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 
+                416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 
+                243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 
+                79.7 101.9V416z" />
+                    </svg>
+                </div>
+                <div class="social-cont" onclick="location.href='mailto:business.nimh@outlook.com'">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="70" >
+                        <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 
+                        154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 
+                        142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 
+                        173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
+                    </svg>
+                </div>
+                <div class="social-cont" onclick="location.href='https://t.me/dakrfox'">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="70" >
+                        <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                        <path
+                            d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z" />
+                    </svg>
+                </div>
             </div>
         </div>
-    </div>
-    <section>
     </section>
     <!--FOOTER-->
     <footer class="footer bg-light text-dark">
-        <h6 class="footer__title black uppercase">Dakrfox</h6>
-        <div class="content">
-            <div class="divider"></div>
-            <div class="row">
-                <div class="col-4">
-                    <ul class="no-bullets">
-                        <a href="https://wa.me/message/RRBBM3ZJ7P4BJ1">
-                            <li class="footer__list-item">Whatsapp</li>
-                        </a>
-                        <a href="https://t.me/dakrfox">
-                            <li class="footer__list-item">Telegram</li>
-                        </a>
-                        <a href="https://instagram.com/dakrfox">
-                            <li class="footer__list-item">Instagram</li>
-                        </a>
-                        <ul>
-                        </ul>
-                    </ul>
-                </div>
-                <div class="col-4">
-                    <ul class="no-bullets">
-                        <a href="#test-modal">
-                            <li class="footer__list-item">Blog</li>
-                        </a>
-                        <a href="mailto:dakrfox@Dakrfox.com">
-                            <li class="footer__list-item">Email</li>
-                        </a>
-                        <a href="#test-modal">
-                            <li class="footer__list-item">Reviews</li>
-                        </a>
-                        <ul>
-                        </ul>
-                    </ul>
-                </div>
-                <div class="col-4">
-                    <ul class="no-bullets">
-                        <a href="#test-modal">
-                            <li class="footer__list-item">FAQ</li>
-                        </a>
-                        <a href="#">
-                            <li class="footer__list-item">Streams</li>
-                        </a>
-                        <ul>
-                        </ul>
-                    </ul>
-                </div>
+        <h6 class="footer__title black uppercase">Nicolas I. Martinez Herrera</h6>
+        <p>Apps developer | Web Developer | Ethical Hacker | Freelancer | Systems Engineer</p>
+        <br>
+        <div class="grid grid-cols-4 u-gap-2 u-text-left" id="footer-grid">
+            <div class="footer-cols">
+                <b>Nicolas Martinez</b>
+                <br>
+                <p>
+                    I'm not an employee, I'm an investment who will return your money making real your dreams or improve
+                    your operations.
+                </p>
+            </div>
+            <div class="footer-cols">
+                <b>Features</b>
+                <br>
+                <ul>
+                    <li> <a href="#test-modal"> FAQ </a></li>
+                    <li><a href="#test-modal"> BLOG</a></li>
+                    <li><a href="#test-modal"> GitHub</a></li>
+                    <li><a href="#test-modal"> Surveys</a></li>
+                </ul>
+            </div>
+            <div class="footer-cols">
+                <b>Open Sources by NIMH</b>
+                <br>
+                <ul>
+                    <li> <a href="#test-modal">APIs</a> </li>
+                    <li> <a href="#test-modal">Assets</a> </li>
+                    <li> <a href="#test-modal">Notes</a> </li>
+                </ul>
+            </div>
+            <div class="footer-cols">
+                <b>Any suggestions</b>
+                <br>
+                <ul>
+                    <li>
+                        <p>business.nimh@outlook.com </p>
+                    </li>
+                    <li>
+                        <p> +57 319 745 8167</p>
+                    </li>
+                </ul>
             </div>
         </div>
-        <p class="subtitle">© 2022 Dakrfox</p>
+        <p class="subtitle">© 2022 | Nicolas I. Martinez Herrera</p>
     </footer>
-
-
-
     <div class="modal modal-animated--zoom-out" id="test-modal">
         <div class="modal-content" role="document">
             <div class="modal-header">
@@ -409,16 +693,15 @@
             </div>
             <div class="modal-body">
                 <h4>Sorry! I'm working on this.</h4>
-                <p>I'm answering all the questions you may have, just tell me</p>
+                <p>I'm answering all the questions that you may have, just let me know.</p>
             </div>
             <div class="modal-footer">
                 <div class="form-section u-text-right">
-                    <h4>- Dakrfox</h4>
+                    <h4>- Nicolas I. Martinez Herrera</h4>
                 </div>
             </div>
         </div>
     </div>
-
     <!--scripts-->
     <script>
         const list = document.querySelectorAll('.list');
@@ -441,6 +724,20 @@
                     modal.click();
                 }
             }
+        });
+    </script>
+    <script>
+        // Get all the nav-btns in the page
+        let navBtns = document.querySelectorAll('.nav-btn');
+        // Add an event handler for all nav-btns to enable the dropdown functionality
+        navBtns.forEach(function (ele) {
+            ele.addEventListener('click', function () {
+                // Get the dropdown-menu associated with this nav button (insert the id of your menu)
+                let dropDownMenu = document.getElementById('MENU_ID_HERE');
+                // Toggle the nav-btn and the dropdown menu
+                ele.classList.toggle('active');
+                dropDownMenu.classList.toggle('active');
+            });
         });
     </script>
 </body>

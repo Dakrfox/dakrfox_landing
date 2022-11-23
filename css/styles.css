@@ -5,32 +5,62 @@
     --second-white: #F6F5F8;
 
 }
-@font-face { 
-    font-family: oswald; 
-    src: url('/fonts/Oswald-VariableFont_wght.ttf'); 
-}
+
+
 @font-face{
     font-family: merriweather-light;
-    src: url('/fonts/Merriweather-Light.ttf');
+    src: url('../fonts/Merriweather-Light.ttf');
 }
-h6, h5, h4, h3, h2, h1, p, b, a{
-    font-family: monserrat;
+
+h6, h3, h1{
+    font-family: monserrat !important;
     font-weight: 200;
+}
+*{
+    font-family: monserrat;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+p, h2{
+    font-family: merriweather-light;
+    font-weight: 200;
+}
+li{
+    list-style: none;
 }
 a{
     cursor: pointer;
 }
-span, button{
+p{
+    font-size: 0.95vw;
+    word-wrap: break-word;
+}
+.k-text{
+    font-size: 0.9vw;
+}
+i, .rating, p, h6, h5, h4, h3, h2, h1{
+    cursor: default;
+
+}
+.header-card h4{
+    font-weight: 500 !important;
+    
+}
+
+span, button, p{
     font-family: merriweather-light;
 }
 html {
     background-color: f6f9fc;
+    scroll-behavior: smooth;
 }
 
 body {
     padding-top: 2%;
 }
-
+b{
+    font-weight: 800;
+}
 
 .imma {
     font-weight: bold;
@@ -65,12 +95,13 @@ body {
     
 }
 
-.header-brand_content h6 {
+.header-brand_content h1{
+    font-family: monserrat;
+    font-size: 22px;
     margin-left: 20px;
     color: var(--main-black);
-    font-family: monserrat;
-    font-weight: 200;
     letter-spacing: 5px;
+    cursor: pointer !important;
 }
 
 .dropdown-menu.dropdown-animated {
@@ -250,7 +281,7 @@ body {
     margin: 2em;
 }
 
-.about-me {
+.knowledge {
     padding: 10em;
 }
 
@@ -287,7 +318,7 @@ body {
 }
 ._grid-ex{
     background-color: var(--main-white);
-    height: 200px;
+    height: 250px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
     display: grid;
     grid:   'header'
@@ -311,7 +342,145 @@ body {
     align-items: flex-end;
     text-align: end;
 }
+summary{
+    height: 100%;
+    min-height: 50px;
+}
 
+.hireme{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    background-color: var(--main-white);
+    padding: 10em;
+}
+
+.tard{
+    margin: 10% auto 0;
+    padding: 1em;
+    position: relative;
+    width: 90%;
+    height: 200px;
+    background-color: #fcfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.glow::before, .glow::after{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: 205px;
+    z-index: -100;
+    animation: animate 20s linear infinite;
+}
+.glow::after{
+    filter: blur(10px);
+}
+.toast{
+    margin: 0 !important;
+    background-color: var(--main-orange) !important;
+    border: 1px solid var(--main-orange) !important;
+    height: 150px;
+}
+.toast.toast--primary i{
+    width: 80px;
+    height: 80px;
+}
+.toast.toast--primary i::before{
+    width: 80px;
+    height: 80px;
+}
+.social-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    fill: var(--main-white);
+    
+}
+.social-cont svg{
+    cursor: pointer;
+}
+.social-cont svg:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.125);
+}
+.footer{
+    padding: 6rem;
+}
+.footer p, .footer a{
+    font-size: 0.85vw;
+    color: var(--main-black);
+    font-weight: 200;
+}
+.footer-cols{
+    margin: 0 50px auto;
+}
+.subtitle
+{
+    margin-top: 5rem;
+}
+
+.JS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+
+@media only screen and (max-width:1200px){
+    .dropdown-menu.dropdown-animated li {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .header{
+        max-width: 90%;
+    }
+    .seccion.bg-light, .hireme, .knowledge {
+        padding: 6rem;
+    }
+    
+}
+@media only screen and (max-width:1024px){
+    h2 {
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 1.75vw;
+    }
+    p {
+        font-size: 1.15vw;
+        word-wrap: break-word;
+    }
+    .footer p, .footer a {
+        font-size: 1.15vw;
+    }
+    .footer-cols {
+        margin: 0 25px auto;
+    }
+}
 @media only screen and (max-width: 768px) {
     .img-stretch.w-120.h-120 {
         margin: 5em auto 0;
@@ -357,7 +526,7 @@ body {
     }
 
     .h3.bg-light,
-    .about-me .h3 {
+    .knowledge .h3 {
         text-align: center;
     }
 
@@ -382,9 +551,82 @@ body {
         text-align: left;
     }
 
-    .about-me {
+    .knowledge {
         padding: 1em;
         padding-top: 2em;
         padding-bottom: 1.5em;
+    }
+    .seccion.bg-light{
+        padding: 1em;
+        padding-top: 2em;
+        padding-bottom: 1.5em;
+    }
+    .hireme{
+        padding: 1em;
+        padding-top: 2em;
+        padding-bottom: 1.5em;
+    }
+    p{
+        font-size: 1.75vw;
+        word-wrap: break-word;
+    }
+    .footer p, .footer a {
+        font-size: 1.75vw;
+    }
+    .footer-cols{
+        margin: 5px;
+        text-align: center;
+    }
+    .k-text {
+        font-size:1.2vw;
+    }
+}
+@media only screen and (max-width:480px){
+    h4{
+        font-size: 3.75vw;
+    }
+    p, .footer p, .footer a , .k-text{
+        font-size: 2.75vw;
+        word-wrap: break-word;
+    }
+    .footer-cols{
+        margin: 5px;
+        text-align: center;
+    }
+    
+    .footer {
+        padding: 3em 1em;
+        margin-top: 0;
+    }
+    .hero-body{
+        padding: 0 !important;
+    }
+
+    .grid-cols-4, .grid-cols-5 {
+        --grid-template-column: repeat(2, minmax(0, 1fr)) !important;
+    }
+    .grid-cols-3, #footer-grid {
+        --grid-template-column: repeat(1, minmax(0, 1fr)) !important;
+    }
+    #SM{
+        --grid-template-column: repeat(4, minmax(0, 1fr)) !important;
+    }
+    .hireme {
+        padding-bottom: 3.5em;
+    }
+    section{
+        padding-top: 4em !important;
+        padding-bottom: 4em !important;
+    }
+    #hero-body{
+        padding: 0 !important;
+    }
+}
+@media only screen and (max-width:320px){
+    .grid-cols-4, .grid-cols-5{
+        --grid-template-column: repeat(1, minmax(0, 1fr)) !important;
+    }
+    html{
+        max-width: 320px;
     }
 }
